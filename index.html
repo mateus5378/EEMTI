@@ -1,0 +1,658 @@
+<!DOCTYPE HTML>
+
+<html lang="pt-BR" class="no-js"><head><style type="text/css">.tippy-touch{cursor:pointer!important}.tippy-notransition{transition:none!important}.tippy-popper{max-width:350px;-webkit-perspective:700px;perspective:700px;z-index:9999;outline:0;transition-timing-function:cubic-bezier(.165,.84,.44,1);pointer-events:none;line-height:1.4}.tippy-popper[data-html]{max-width:96%;max-width:calc(100% - 20px)}.tippy-popper[x-placement^=top] .tippy-backdrop{border-radius:40% 40% 0 0}.tippy-popper[x-placement^=top] .tippy-roundarrow{bottom:-8px;-webkit-transform-origin:50% 0;transform-origin:50% 0}.tippy-popper[x-placement^=top] .tippy-roundarrow svg{position:absolute;left:0;-webkit-transform:rotate(180deg);transform:rotate(180deg)}.tippy-popper[x-placement^=top] .tippy-arrow{border-top:7px solid #333;border-right:7px solid transparent;border-left:7px solid transparent;bottom:-7px;margin:0 6px;-webkit-transform-origin:50% 0;transform-origin:50% 0}.tippy-popper[x-placement^=top] .tippy-backdrop{-webkit-transform-origin:0 90%;transform-origin:0 90%}.tippy-popper[x-placement^=top] .tippy-backdrop[data-state=visible]{-webkit-transform:scale(6) translate(-50%,25%);transform:scale(6) translate(-50%,25%);opacity:1}.tippy-popper[x-placement^=top] .tippy-backdrop[data-state=hidden]{-webkit-transform:scale(1) translate(-50%,25%);transform:scale(1) translate(-50%,25%);opacity:0}.tippy-popper[x-placement^=top] [data-animation=shift-toward][data-state=visible]{opacity:1;-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=shift-toward][data-state=hidden]{opacity:0;-webkit-transform:translateY(-20px);transform:translateY(-20px)}.tippy-popper[x-placement^=top] [data-animation=perspective]{-webkit-transform-origin:bottom;transform-origin:bottom}.tippy-popper[x-placement^=top] [data-animation=perspective][data-state=visible]{opacity:1;-webkit-transform:translateY(-10px) rotateX(0);transform:translateY(-10px) rotateX(0)}.tippy-popper[x-placement^=top] [data-animation=perspective][data-state=hidden]{opacity:0;-webkit-transform:translateY(0) rotateX(90deg);transform:translateY(0) rotateX(90deg)}.tippy-popper[x-placement^=top] [data-animation=fade][data-state=visible]{opacity:1;-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=fade][data-state=hidden]{opacity:0;-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=shift-away][data-state=visible]{opacity:1;-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=shift-away][data-state=hidden]{opacity:0;-webkit-transform:translateY(0);transform:translateY(0)}.tippy-popper[x-placement^=top] [data-animation=scale][data-state=visible]{opacity:1;-webkit-transform:translateY(-10px) scale(1);transform:translateY(-10px) scale(1)}.tippy-popper[x-placement^=top] [data-animation=scale][data-state=hidden]{opacity:0;-webkit-transform:translateY(0) scale(0);transform:translateY(0) scale(0)}.tippy-popper[x-placement^=bottom] .tippy-backdrop{border-radius:0 0 30% 30%}.tippy-popper[x-placement^=bottom] .tippy-roundarrow{top:-8px;-webkit-transform-origin:50% 100%;transform-origin:50% 100%}.tippy-popper[x-placement^=bottom] .tippy-roundarrow svg{position:absolute;left:0;-webkit-transform:rotate(0);transform:rotate(0)}.tippy-popper[x-placement^=bottom] .tippy-arrow{border-bottom:7px solid #333;border-right:7px solid transparent;border-left:7px solid transparent;top:-7px;margin:0 6px;-webkit-transform-origin:50% 100%;transform-origin:50% 100%}.tippy-popper[x-placement^=bottom] .tippy-backdrop{-webkit-transform-origin:0 -90%;transform-origin:0 -90%}.tippy-popper[x-placement^=bottom] .tippy-backdrop[data-state=visible]{-webkit-transform:scale(6) translate(-50%,-125%);transform:scale(6) translate(-50%,-125%);opacity:1}.tippy-popper[x-placement^=bottom] .tippy-backdrop[data-state=hidden]{-webkit-transform:scale(1) translate(-50%,-125%);transform:scale(1) translate(-50%,-125%);opacity:0}.tippy-popper[x-placement^=bottom] [data-animation=shift-toward][data-state=visible]{opacity:1;-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=shift-toward][data-state=hidden]{opacity:0;-webkit-transform:translateY(20px);transform:translateY(20px)}.tippy-popper[x-placement^=bottom] [data-animation=perspective]{-webkit-transform-origin:top;transform-origin:top}.tippy-popper[x-placement^=bottom] [data-animation=perspective][data-state=visible]{opacity:1;-webkit-transform:translateY(10px) rotateX(0);transform:translateY(10px) rotateX(0)}.tippy-popper[x-placement^=bottom] [data-animation=perspective][data-state=hidden]{opacity:0;-webkit-transform:translateY(0) rotateX(-90deg);transform:translateY(0) rotateX(-90deg)}.tippy-popper[x-placement^=bottom] [data-animation=fade][data-state=visible]{opacity:1;-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=fade][data-state=hidden]{opacity:0;-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=shift-away][data-state=visible]{opacity:1;-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=shift-away][data-state=hidden]{opacity:0;-webkit-transform:translateY(0);transform:translateY(0)}.tippy-popper[x-placement^=bottom] [data-animation=scale][data-state=visible]{opacity:1;-webkit-transform:translateY(10px) scale(1);transform:translateY(10px) scale(1)}.tippy-popper[x-placement^=bottom] [data-animation=scale][data-state=hidden]{opacity:0;-webkit-transform:translateY(0) scale(0);transform:translateY(0) scale(0)}.tippy-popper[x-placement^=left] .tippy-backdrop{border-radius:50% 0 0 50%}.tippy-popper[x-placement^=left] .tippy-roundarrow{right:-16px;-webkit-transform-origin:33.33333333% 50%;transform-origin:33.33333333% 50%}.tippy-popper[x-placement^=left] .tippy-roundarrow svg{position:absolute;left:0;-webkit-transform:rotate(90deg);transform:rotate(90deg)}.tippy-popper[x-placement^=left] .tippy-arrow{border-left:7px solid #333;border-top:7px solid transparent;border-bottom:7px solid transparent;right:-7px;margin:3px 0;-webkit-transform-origin:0 50%;transform-origin:0 50%}.tippy-popper[x-placement^=left] .tippy-backdrop{-webkit-transform-origin:100% 0;transform-origin:100% 0}.tippy-popper[x-placement^=left] .tippy-backdrop[data-state=visible]{-webkit-transform:scale(6) translate(40%,-50%);transform:scale(6) translate(40%,-50%);opacity:1}.tippy-popper[x-placement^=left] .tippy-backdrop[data-state=hidden]{-webkit-transform:scale(1.5) translate(40%,-50%);transform:scale(1.5) translate(40%,-50%);opacity:0}.tippy-popper[x-placement^=left] [data-animation=shift-toward][data-state=visible]{opacity:1;-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=shift-toward][data-state=hidden]{opacity:0;-webkit-transform:translateX(-20px);transform:translateX(-20px)}.tippy-popper[x-placement^=left] [data-animation=perspective]{-webkit-transform-origin:right;transform-origin:right}.tippy-popper[x-placement^=left] [data-animation=perspective][data-state=visible]{opacity:1;-webkit-transform:translateX(-10px) rotateY(0);transform:translateX(-10px) rotateY(0)}.tippy-popper[x-placement^=left] [data-animation=perspective][data-state=hidden]{opacity:0;-webkit-transform:translateX(0) rotateY(-90deg);transform:translateX(0) rotateY(-90deg)}.tippy-popper[x-placement^=left] [data-animation=fade][data-state=visible]{opacity:1;-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=fade][data-state=hidden]{opacity:0;-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=shift-away][data-state=visible]{opacity:1;-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=shift-away][data-state=hidden]{opacity:0;-webkit-transform:translateX(0);transform:translateX(0)}.tippy-popper[x-placement^=left] [data-animation=scale][data-state=visible]{opacity:1;-webkit-transform:translateX(-10px) scale(1);transform:translateX(-10px) scale(1)}.tippy-popper[x-placement^=left] [data-animation=scale][data-state=hidden]{opacity:0;-webkit-transform:translateX(0) scale(0);transform:translateX(0) scale(0)}.tippy-popper[x-placement^=right] .tippy-backdrop{border-radius:0 50% 50% 0}.tippy-popper[x-placement^=right] .tippy-roundarrow{left:-16px;-webkit-transform-origin:66.66666666% 50%;transform-origin:66.66666666% 50%}.tippy-popper[x-placement^=right] .tippy-roundarrow svg{position:absolute;left:0;-webkit-transform:rotate(-90deg);transform:rotate(-90deg)}.tippy-popper[x-placement^=right] .tippy-arrow{border-right:7px solid #333;border-top:7px solid transparent;border-bottom:7px solid transparent;left:-7px;margin:3px 0;-webkit-transform-origin:100% 50%;transform-origin:100% 50%}.tippy-popper[x-placement^=right] .tippy-backdrop{-webkit-transform-origin:-100% 0;transform-origin:-100% 0}.tippy-popper[x-placement^=right] .tippy-backdrop[data-state=visible]{-webkit-transform:scale(6) translate(-140%,-50%);transform:scale(6) translate(-140%,-50%);opacity:1}.tippy-popper[x-placement^=right] .tippy-backdrop[data-state=hidden]{-webkit-transform:scale(1.5) translate(-140%,-50%);transform:scale(1.5) translate(-140%,-50%);opacity:0}.tippy-popper[x-placement^=right] [data-animation=shift-toward][data-state=visible]{opacity:1;-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=shift-toward][data-state=hidden]{opacity:0;-webkit-transform:translateX(20px);transform:translateX(20px)}.tippy-popper[x-placement^=right] [data-animation=perspective]{-webkit-transform-origin:left;transform-origin:left}.tippy-popper[x-placement^=right] [data-animation=perspective][data-state=visible]{opacity:1;-webkit-transform:translateX(10px) rotateY(0);transform:translateX(10px) rotateY(0)}.tippy-popper[x-placement^=right] [data-animation=perspective][data-state=hidden]{opacity:0;-webkit-transform:translateX(0) rotateY(90deg);transform:translateX(0) rotateY(90deg)}.tippy-popper[x-placement^=right] [data-animation=fade][data-state=visible]{opacity:1;-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=fade][data-state=hidden]{opacity:0;-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=shift-away][data-state=visible]{opacity:1;-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=shift-away][data-state=hidden]{opacity:0;-webkit-transform:translateX(0);transform:translateX(0)}.tippy-popper[x-placement^=right] [data-animation=scale][data-state=visible]{opacity:1;-webkit-transform:translateX(10px) scale(1);transform:translateX(10px) scale(1)}.tippy-popper[x-placement^=right] [data-animation=scale][data-state=hidden]{opacity:0;-webkit-transform:translateX(0) scale(0);transform:translateX(0) scale(0)}.tippy-tooltip{position:relative;color:#fff;border-radius:4px;font-size:.9rem;padding:.3rem .6rem;text-align:center;will-change:transform;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;background-color:#333}.tippy-tooltip[data-size=small]{padding:.2rem .4rem;font-size:.75rem}.tippy-tooltip[data-size=large]{padding:.4rem .8rem;font-size:1rem}.tippy-tooltip[data-animatefill]{overflow:hidden;background-color:transparent}.tippy-tooltip[data-animatefill] .tippy-content{transition:-webkit-clip-path cubic-bezier(.46,.1,.52,.98);transition:clip-path cubic-bezier(.46,.1,.52,.98);transition:clip-path cubic-bezier(.46,.1,.52,.98),-webkit-clip-path cubic-bezier(.46,.1,.52,.98)}.tippy-tooltip[data-interactive],.tippy-tooltip[data-interactive] path{pointer-events:auto}.tippy-tooltip[data-inertia][data-state=visible]{transition-timing-function:cubic-bezier(.53,2,.36,.85)}.tippy-tooltip[data-inertia][data-state=hidden]{transition-timing-function:ease}.tippy-arrow,.tippy-roundarrow{position:absolute;width:0;height:0}.tippy-roundarrow{width:24px;height:8px;fill:#333;pointer-events:none}.tippy-backdrop{position:absolute;will-change:transform;background-color:#333;border-radius:50%;width:26%;left:50%;top:50%;z-index:-1;transition:all cubic-bezier(.46,.1,.52,.98);-webkit-backface-visibility:hidden;backface-visibility:hidden}.tippy-backdrop:after{content:"";float:left;padding-top:100%}body:not(.tippy-touch) .tippy-tooltip[data-animatefill][data-state=visible] .tippy-content{-webkit-clip-path:ellipse(100% 100% at 50% 50%);clip-path:ellipse(100% 100% at 50% 50%)}body:not(.tippy-touch) .tippy-tooltip[data-animatefill][data-state=hidden] .tippy-content{-webkit-clip-path:ellipse(5% 50% at 50% 50%);clip-path:ellipse(5% 50% at 50% 50%)}body:not(.tippy-touch) .tippy-popper[x-placement=right] .tippy-tooltip[data-animatefill][data-state=visible] .tippy-content{-webkit-clip-path:ellipse(135% 100% at 0 50%);clip-path:ellipse(135% 100% at 0 50%)}body:not(.tippy-touch) .tippy-popper[x-placement=right] .tippy-tooltip[data-animatefill][data-state=hidden] .tippy-content{-webkit-clip-path:ellipse(40% 100% at 0 50%);clip-path:ellipse(40% 100% at 0 50%)}body:not(.tippy-touch) .tippy-popper[x-placement=left] .tippy-tooltip[data-animatefill][data-state=visible] .tippy-content{-webkit-clip-path:ellipse(135% 100% at 100% 50%);clip-path:ellipse(135% 100% at 100% 50%)}body:not(.tippy-touch) .tippy-popper[x-placement=left] .tippy-tooltip[data-animatefill][data-state=hidden] .tippy-content{-webkit-clip-path:ellipse(40% 100% at 100% 50%);clip-path:ellipse(40% 100% at 100% 50%)}@media (max-width:360px){.tippy-popper{max-width:96%;max-width:calc(100% - 20px)}}</style>
+    <meta charset="UTF-8">
+
+    <title>Escola Monsenhor Aguiar</title>
+    
+
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <link rel="shortcut icon" href="https://www.seduc.ce.gov.br/wp-content/themes/ceara2017/favicon.ico" type="image/x-png">
+
+        <link rel="shortcut icon" href="https://www.seduc.ce.gov.br/wp-content/themes/ceara2017/favicon.ico" type="image/x-icon">
+
+    <link rel="icon" href="https://www.seduc.ce.gov.br/wp-content/themes/ceara2017/favicon.ico" type="image/x-icon">
+
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+	<!-- This site is optimized with the Yoast SEO plugin v18.2 - https://yoast.com/wordpress/plugins/seo/ -->
+	<link rel="canonical" href="https://www.seduc.ce.gov.br/escola-em-tempo-integral/">
+	<meta property="og:locale" content="pt_BR">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Escola em Tempo Integral - Secretaria da Educação">
+	<meta property="og:description" content="&nbsp; A Secretaria da Educação do Ceará tem empreendido esforços para um ensino de qualidade nas suas escolas, procurando sempre prover a equidade através da realização de projetos que contribuam para o desenvolvimento do jovem em todas as suas dimensões. &nbsp; Desta maneira, a organização da escola em tempo integral é uma estratégia defendida por […]">
+	<meta property="og:url" content="https://www.seduc.ce.gov.br/escola-em-tempo-integral/">
+	<meta property="og:site_name" content="Secretaria da Educação">
+	<meta property="article:modified_time" content="2018-08-13T12:36:26+00:00">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:label1" content="Est. reading time">
+	<meta name="twitter:data1" content="5 minutos">
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.seduc.ce.gov.br/#organization","name":"Secretaria da Educação","url":"https://www.seduc.ce.gov.br/","sameAs":[],"logo":{"@type":"ImageObject","@id":"https://www.seduc.ce.gov.br/#logo","inLanguage":"pt-BR","url":"https://www.seduc.ce.gov.br/wp-content/uploads/sites/37/2018/05/seduc-clara2.png","contentUrl":"https://www.seduc.ce.gov.br/wp-content/uploads/sites/37/2018/05/seduc-clara2.png","width":559,"height":106,"caption":"Secretaria da Educação"},"image":{"@id":"https://www.seduc.ce.gov.br/#logo"}},{"@type":"WebSite","@id":"https://www.seduc.ce.gov.br/#website","url":"https://www.seduc.ce.gov.br/","name":"Secretaria da Educação","description":"Secretaria da Educação","publisher":{"@id":"https://www.seduc.ce.gov.br/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.seduc.ce.gov.br/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"pt-BR"},{"@type":"WebPage","@id":"https://www.seduc.ce.gov.br/escola-em-tempo-integral/#webpage","url":"https://www.seduc.ce.gov.br/escola-em-tempo-integral/","name":"Escola em Tempo Integral - Secretaria da Educação","isPartOf":{"@id":"https://www.seduc.ce.gov.br/#website"},"datePublished":"2018-08-10T19:27:20+00:00","dateModified":"2018-08-13T12:36:26+00:00","breadcrumb":{"@id":"https://www.seduc.ce.gov.br/escola-em-tempo-integral/#breadcrumb"},"inLanguage":"pt-BR","potentialAction":[{"@type":"ReadAction","target":["https://www.seduc.ce.gov.br/escola-em-tempo-integral/"]}]},{"@type":"BreadcrumbList","@id":"https://www.seduc.ce.gov.br/escola-em-tempo-integral/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://www.seduc.ce.gov.br/"},{"@type":"ListItem","position":2,"name":"Escola em Tempo Integral"}]}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+<link rel="alternate" type="application/rss+xml" title="Feed para Secretaria da Educação »" href="https://www.seduc.ce.gov.br/feed/">
+<link rel="alternate" type="application/rss+xml" title="Feed de comentários para Secretaria da Educação »" href="https://www.seduc.ce.gov.br/comments/feed/">
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"wpemoji":"https:\/\/www.seduc.ce.gov.br\/wp-includes\/js\/wp-emoji.js","twemoji":"https:\/\/www.seduc.ce.gov.br\/wp-includes\/js\/twemoji.js"}};
+/**
+ * @output wp-includes/js/wp-emoji-loader.js
+ */
+
+( function( window, document, settings ) {
+	var src, ready, ii, tests;
+
+	// Create a canvas element for testing native browser support of emoji.
+	var canvas = document.createElement( 'canvas' );
+	var context = canvas.getContext && canvas.getContext( '2d' );
+
+	/**
+	 * Checks if two sets of Emoji characters render the same visually.
+	 *
+	 * @since 4.9.0
+	 *
+	 * @private
+	 *
+	 * @param {number[]} set1 Set of Emoji character codes.
+	 * @param {number[]} set2 Set of Emoji character codes.
+	 *
+	 * @return {boolean} True if the two sets render the same.
+	 */
+	function emojiSetsRenderIdentically( set1, set2 ) {
+		var stringFromCharCode = String.fromCharCode;
+
+		// Cleanup from previous test.
+		context.clearRect( 0, 0, canvas.width, canvas.height );
+		context.fillText( stringFromCharCode.apply( this, set1 ), 0, 0 );
+		var rendered1 = canvas.toDataURL();
+
+		// Cleanup from previous test.
+		context.clearRect( 0, 0, canvas.width, canvas.height );
+		context.fillText( stringFromCharCode.apply( this, set2 ), 0, 0 );
+		var rendered2 = canvas.toDataURL();
+
+		return rendered1 === rendered2;
+	}
+
+	/**
+	 * Detects if the browser supports rendering emoji or flag emoji.
+	 *
+	 * Flag emoji are a single glyph made of two characters, so some browsers
+	 * (notably, Firefox OS X) don't support them.
+	 *
+	 * @since 4.2.0
+	 *
+	 * @private
+	 *
+	 * @param {string} type Whether to test for support of "flag" or "emoji".
+	 *
+	 * @return {boolean} True if the browser can render emoji, false if it cannot.
+	 */
+	function browserSupportsEmoji( type ) {
+		var isIdentical;
+
+		if ( ! context || ! context.fillText ) {
+			return false;
+		}
+
+		/*
+		 * Chrome on OS X added native emoji rendering in M41. Unfortunately,
+		 * it doesn't work when the font is bolder than 500 weight. So, we
+		 * check for bold rendering support to avoid invisible emoji in Chrome.
+		 */
+		context.textBaseline = 'top';
+		context.font = '600 32px Arial';
+
+		switch ( type ) {
+			case 'flag':
+				/*
+				 * Test for Transgender flag compatibility. This flag is shortlisted for the Emoji 13 spec,
+				 * but has landed in Twemoji early, so we can add support for it, too.
+				 *
+				 * To test for support, we try to render it, and compare the rendering to how it would look if
+				 * the browser doesn't render it correctly (white flag emoji + transgender symbol).
+				 */
+				isIdentical = emojiSetsRenderIdentically(
+					[ 0x1F3F3, 0xFE0F, 0x200D, 0x26A7, 0xFE0F ],
+					[ 0x1F3F3, 0xFE0F, 0x200B, 0x26A7, 0xFE0F ]
+				);
+
+				if ( isIdentical ) {
+					return false;
+				}
+
+				/*
+				 * Test for UN flag compatibility. This is the least supported of the letter locale flags,
+				 * so gives us an easy test for full support.
+				 *
+				 * To test for support, we try to render it, and compare the rendering to how it would look if
+				 * the browser doesn't render it correctly ([U] + [N]).
+				 */
+				isIdentical = emojiSetsRenderIdentically(
+					[ 0xD83C, 0xDDFA, 0xD83C, 0xDDF3 ],
+					[ 0xD83C, 0xDDFA, 0x200B, 0xD83C, 0xDDF3 ]
+				);
+
+				if ( isIdentical ) {
+					return false;
+				}
+
+				/*
+				 * Test for English flag compatibility. England is a country in the United Kingdom, it
+				 * does not have a two letter locale code but rather an five letter sub-division code.
+				 *
+				 * To test for support, we try to render it, and compare the rendering to how it would look if
+				 * the browser doesn't render it correctly (black flag emoji + [G] + [B] + [E] + [N] + [G]).
+				 */
+				isIdentical = emojiSetsRenderIdentically(
+					[ 0xD83C, 0xDFF4, 0xDB40, 0xDC67, 0xDB40, 0xDC62, 0xDB40, 0xDC65, 0xDB40, 0xDC6E, 0xDB40, 0xDC67, 0xDB40, 0xDC7F ],
+					[ 0xD83C, 0xDFF4, 0x200B, 0xDB40, 0xDC67, 0x200B, 0xDB40, 0xDC62, 0x200B, 0xDB40, 0xDC65, 0x200B, 0xDB40, 0xDC6E, 0x200B, 0xDB40, 0xDC67, 0x200B, 0xDB40, 0xDC7F ]
+				);
+
+				return ! isIdentical;
+			case 'emoji':
+				/*
+				 * Why can't we be friends? Everyone can now shake hands in emoji, regardless of skin tone!
+				 *
+				 * To test for Emoji 14.0 support, try to render a new emoji: Handshake: Light Skin Tone, Dark Skin Tone.
+				 *
+				 * The Handshake: Light Skin Tone, Dark Skin Tone emoji is a ZWJ sequence combining 🫱 Rightwards Hand,
+				 * 🏻 Light Skin Tone, a Zero Width Joiner, 🫲 Leftwards Hand, and 🏿 Dark Skin Tone.
+				 *
+				 * 0x1FAF1 == Rightwards Hand
+				 * 0x1F3FB == Light Skin Tone
+				 * 0x200D == Zero-Width Joiner (ZWJ) that links the code points for the new emoji or
+				 * 0x200B == Zero-Width Space (ZWS) that is rendered for clients not supporting the new emoji.
+				 * 0x1FAF2 == Leftwards Hand
+				 * 0x1F3FF == Dark Skin Tone.
+				 *
+				 * When updating this test for future Emoji releases, ensure that individual emoji that make up the
+				 * sequence come from older emoji standards.
+				 */
+				isIdentical = emojiSetsRenderIdentically(
+					[0x1FAF1, 0x1F3FB, 0x200D, 0x1FAF2, 0x1F3FF],
+					[0x1FAF1, 0x1F3FB, 0x200B, 0x1FAF2, 0x1F3FF]
+				);
+
+				return ! isIdentical;
+		}
+
+		return false;
+	}
+
+	/**
+	 * Adds a script to the head of the document.
+	 *
+	 * @ignore
+	 *
+	 * @since 4.2.0
+	 *
+	 * @param {Object} src The url where the script is located.
+	 * @return {void}
+	 */
+	function addScript( src ) {
+		var script = document.createElement( 'script' );
+
+		script.src = src;
+		script.defer = script.type = 'text/javascript';
+		document.getElementsByTagName( 'head' )[0].appendChild( script );
+	}
+
+	tests = Array( 'flag', 'emoji' );
+
+	settings.supports = {
+		everything: true,
+		everythingExceptFlag: true
+	};
+
+	/*
+	 * Tests the browser support for flag emojis and other emojis, and adjusts the
+	 * support settings accordingly.
+	 */
+	for( ii = 0; ii < tests.length; ii++ ) {
+		settings.supports[ tests[ ii ] ] = browserSupportsEmoji( tests[ ii ] );
+
+		settings.supports.everything = settings.supports.everything && settings.supports[ tests[ ii ] ];
+
+		if ( 'flag' !== tests[ ii ] ) {
+			settings.supports.everythingExceptFlag = settings.supports.everythingExceptFlag && settings.supports[ tests[ ii ] ];
+		}
+	}
+
+	settings.supports.everythingExceptFlag = settings.supports.everythingExceptFlag && ! settings.supports.flag;
+
+	// Sets DOMReady to false and assigns a ready function to settings.
+	settings.DOMReady = false;
+	settings.readyCallback = function() {
+		settings.DOMReady = true;
+	};
+
+	// When the browser can not render everything we need to load a polyfill.
+	if ( ! settings.supports.everything ) {
+		ready = function() {
+			settings.readyCallback();
+		};
+
+		/*
+		 * Cross-browser version of adding a dom ready event.
+		 */
+		if ( document.addEventListener ) {
+			document.addEventListener( 'DOMContentLoaded', ready, false );
+			window.addEventListener( 'load', ready, false );
+		} else {
+			window.attachEvent( 'onload', ready );
+			document.attachEvent( 'onreadystatechange', function() {
+				if ( 'complete' === document.readyState ) {
+					settings.readyCallback();
+				}
+			} );
+		}
+
+		src = settings.source || {};
+
+		if ( src.concatemoji ) {
+			addScript( src.concatemoji );
+		} else if ( src.wpemoji && src.twemoji ) {
+			addScript( src.twemoji );
+			addScript( src.wpemoji );
+		}
+	}
+
+} )( window, document, window._wpemojiSettings );
+</script><script src="https://www.seduc.ce.gov.br/wp-includes/js/twemoji.js" type="text/javascript" defer=""></script><script src="https://www.seduc.ce.gov.br/wp-includes/js/wp-emoji.js" type="text/javascript" defer=""></script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="https://www.seduc.ce.gov.br/wp-includes/css/dist/block-library/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="classic-theme-styles-css" href="https://www.seduc.ce.gov.br/wp-includes/css/classic-themes.css" type="text/css" media="all">
+<style id="global-styles-inline-css" type="text/css">
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel="stylesheet" id="hamburguer-menu-effect-css" href="https://www.seduc.ce.gov.br/wp-content/themes/ceara2017/assets/css/hamburguer-menu-effect.css" type="text/css" media="all">
+<link rel="stylesheet" id="tablepress-default-css" href="https://www.seduc.ce.gov.br/wp-content/plugins/tablepress/css/default.css" type="text/css" media="all">
+<link rel="stylesheet" id="dashicons-css" href="https://www.seduc.ce.gov.br/wp-includes/css/dashicons.css" type="text/css" media="all">
+<link rel="stylesheet" id="thickbox-css" href="https://www.seduc.ce.gov.br/wp-includes/js/thickbox/thickbox.css" type="text/css" media="all">
+<link rel="stylesheet" id="keyboard_css-css" href="https://www.seduc.ce.gov.br/wp-content/themes/ceara2017/Keyboard-master/css/keyboard.css?1665070214" type="text/css" media="all">
+<link rel="stylesheet" id="modestgrid_css-css" href="https://www.seduc.ce.gov.br/wp-content/themes/ceara2017/assets/css/lib/modestgrid.css?1665070214" type="text/css" media="all">
+<link rel="stylesheet" id="header_css-css" href="https://www.seduc.ce.gov.br/wp-content/themes/ceara2017/assets/css/header.css?1665070214" type="text/css" media="all">
+<link rel="stylesheet" id="menumobile_css-css" href="https://www.seduc.ce.gov.br/wp-content/themes/ceara2017/assets/css/menumobile.css?1665070214" type="text/css" media="all">
+<link rel="stylesheet" id="base_css-css" href="https://www.seduc.ce.gov.br/wp-content/themes/ceara2017/assets/css/main.css?1665070214" type="text/css" media="all">
+<link rel="stylesheet" id="slick_css-css" href="https://www.seduc.ce.gov.br/wp-content/themes/ceara2017/assets/css/lib/slick.css?1665070214" type="text/css" media="all">
+<link rel="stylesheet" id="fontawesome-css" href="https://www.seduc.ce.gov.br/wp-content/themes/ceara2017/assets/libs/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css?1665070214" type="text/css" media="all">
+<link rel="stylesheet" id="hover-css" href="https://www.seduc.ce.gov.br/wp-content/themes/ceara2017/assets/libs/hover/css/hover.min.css?1665070214" type="text/css" media="all">
+<link rel="stylesheet" id="cc-bootstrap-wrapper-css" href="https://www.seduc.ce.gov.br/wp-content/themes/ceara2017/assets/libs/cc-bootstrap/css/cc-bootstrap.min.css?1665070214" type="text/css" media="all">
+<link rel="stylesheet" id="custom_css-css" href="https://www.seduc.ce.gov.br/wp-content/themes/ceara2017/style.css?1670340141" type="text/css" media="all">
+<link rel="stylesheet" id="sitefilho_css-css" href="https://www.seduc.ce.gov.br/wp-content/themes/ceara2017/assets/css/sitefilho.css?1665070214" type="text/css" media="all">
+<link rel="stylesheet" id="ceara_select2_site_style-css" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" type="text/css" media="all">
+<link rel="https://api.w.org/" href="https://www.seduc.ce.gov.br/wp-json/"><link rel="alternate" type="application/json" href="https://www.seduc.ce.gov.br/wp-json/wp/v2/pages/27090"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.seduc.ce.gov.br/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.seduc.ce.gov.br/wp-includes/wlwmanifest.xml">
+<link rel="shortlink" href="https://www.seduc.ce.gov.br/?p=27090">
+<link rel="alternate" type="application/json+oembed" href="https://www.seduc.ce.gov.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.seduc.ce.gov.br%2Fescola-em-tempo-integral%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://www.seduc.ce.gov.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.seduc.ce.gov.br%2Fescola-em-tempo-integral%2F&amp;format=xml">
+
+    </head>
+
+
+<body data-rsssl="1" class="page-template-default page page-id-27090 site-filho SinglePage" data-ajaxurl="">
+        <main role="main" id="main">
+        <!-- No Script -->
+        <noscript>
+            <p>
+                Estimado usuário, identificamos que o seu navegador não conseguiu abrir todos os componentes necessários para o completo funcionamento do sistema. Recomentamos que atualize o seu navegador.
+            </p>
+        </noscript>
+
+        <div class="cc-bootstrap-wrapper">
+            <!-- Barra Corona Vírus -->
+            <!-- <div class="container-fluid" style="background: #ffbd00;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col text-center py-2">
+                            <a class="hvr-grow small text-white" target="_blank" alt="CORONAVÍRUS-COVID-19" href="https://coronavirus.ceara.gov.br" title="coronavirus-covid-19"><strong>CORONAVÍRUS</strong>: Clique e saiba o que fazer</a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- Cabeçalho -->
+                            <div class="d-none d-sm-none d-md-block">
+                    <header class="cc-header">
+                        <div style="text-align: center; color: #ff6900;" class="container-fluid" >
+                            <div class="container">
+                                <div class="cc-topbar row d-flex align-items-center justify-content-between">
+                                    <div class="col-auto" >
+                                        
+                                        <div class="cc-related-sites-menu-container"><ul id="menu-superior" class="cc-related-sites-menu-list list-unstyled list-inline mb-0"><li id="menu-item-13" class="menu-item menu-item-type-custom menu-item-object-custom list-inline-item mr-0 menu-item-13"><a target="_blank" rel="noopener noreferrer" href="https://escolamonsaguiar.blogspot.com/"><span>EEMTI Monsenhor Aguiar</span></a></li>
+                                            
+</ul>
+</li>
+</ul></div>                                    </div>
+                                    <div class="col d-flex justify-content-between mt-1">
+                                        <!-- GTranslate -->
+                                        <div>
+                                                                                    </div>
+
+                                        <!-- Acessibilidade -->
+                                        <ul class="menu-accessibility d-flex m-0 p-0">
+                                            <li class="menu-accessibility__item">       
+                                                <a href="javascript:;" class="menu-accessibility__link menu-accessibility__link--normal" title="Fonte tamanho normal">
+                                                  
+                                                </a>
+                                            </li>
+                                        </ul>
+
+                                        <div class="cc-related-sites-menu-container">
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-fluid cc-bg-main-menu">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col pt-3 pb-5">
+                                        <nav class="d-flex justify-content-between">
+                                            
+                                                                                                    <img id="logo"  
+                                                                                                     class="menu-accessibility__img" 
+                                                                                                
+                                                                                                    src="download (1).jpeg"  />
+                                                                                            </a>
+                                            <div class="d-flex">
+                                                <form action="" method="get" class="cc-search cc-search-internal d-flex align-items-center mx-3">
+                                                </form>
+                                                <div class="cc-main-menu cc-main-menu-internal d-flex align-items-center"><ul id="menu-principal" class="d-flex align-items-center list-unstyled list-inline mb-0"><li id="menu-item-9" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children list-inline-item mr-0 menu-item-9"><a href="javascript;">cardápio</a>
+<!--começo do cardápio-->
+	<ul class="sub-menu list-unstyled list-inline">
+	<li id="menu-item-87" > <a>lanche da manhã</a> <a>almoço</a> <a > lanche da tarde</a></li>
+	<li id="menu-item-87" > <a>seg:</a><a > cuscuz com leite </a> <a> guisado de frango </a> <a> risoto de frango/frutas</a> </li>
+	<li id="menu-item-87" > <a>ter:</a><a > canja</a> <a>baião de dois/ovos mexidos com queijo/farofa/frutas</a> <a>shake de goiaba com biscoito</a> </li>
+	<li id="menu-item-87" > <a>quar:</a><a > vitamina de banana com biscoito</a> <a> picadinho de carne com legumes/arroz/feijão/macarrão/frutas</a> <a> sopa de carne/feijão/legumes</a> </li>
+	<li id="menu-item-87" > <a>qui:</a><a > pão com margarina/leite com café </a> <a> frango ao molho/arroz/feijão/farofa de cuscuz/frutas </a> <a> macarronada de frango/suco</a> </li>
+	<li id="menu-item-87" > <a>sexta:</a><a >cuscuz com ovo/suco</a> <a>baião de dois/frango assado/farofa/macaxeira refogada/suco</a> <a> salada de frutas</a> </li>
+	
+</ul>
+</li>
+
+  <!--acabou o cardápio-->
+</li>
+</ul></div>                                            </div>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                </div>
+            
+            <!-- Cabeçalho mobile -->
+            <div class="d-block d-sm-block d-md-none d-lg-none d-xl-none cc-mobile-menu" style="overflow: hidden;">
+                <header class="cc-header">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-auto">
+                                <nav class="navbar navbar-dark" role="navigation">
+                                    <button class="navbar-toggler collapsed px-0 py-1 border-0" type="button" data-toggle="collapse" data-target="#menu-mobile" aria-controls="menu-mobile" aria-expanded="false" aria-label="Menu">
+                                        <span class="icon-bar top-bar"></span>
+                                        <span class="icon-bar middle-bar"></span>
+                                        <span class="icon-bar bottom-bar"></span>
+                                    </button>
+                                    <div id="menu-mobile" class="collapse navbar-collapse mt-3"><ul id="menu-principal-1" class="nav navbar-nav"><li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-9 nav-item"><a title="Institucional" href="javascript:;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-9">Institucional</a>
+
+</ul>
+</li>
+
+</li>
+</ul></div>                                </nav>
+                            </div>
+
+                            <div class="col d-flex align-items-center justify-content-end">
+                                    <!-- GTranslate -->
+                                      
+
+                                    <!-- Acessibilidade -->
+                                    <ul class="menu-accessibility d-flex m-0 p-0">
+                                        <li class="menu-accessibility__item">       
+                                            <a href="javascript:;" class="menu-accessibility__link menu-accessibility__link--normal" title="Fonte tamanho normal">
+                                                <img src="https://www.seduc.ce.gov.br/wp-content/themes/ceara2017/assets/images/font-normal-02.svg" alt="Fonte tamanho normal" class="menu-accessibility__img" width="24" height="24">
+                                            </a>
+                                        </li>
+                                        <li class="menu-accessibility__item">
+                                            <a href="javascript:;" class="menu-accessibility__link menu-accessibility__link--decrease" title="Diminuir a fonte">
+                                                <img src="https://www.seduc.ce.gov.br/wp-content/themes/ceara2017/assets/images/font-less-02.svg" alt="Dominuir a fonte" class="menu-accessibility__img" width="24" height="24">
+                                            </a>
+                                        </li>
+                                        <li class="menu-accessibility__item">
+                                            <a href="javascript:;" class="menu-accessibility__link menu-accessibility__link--increase" title="Aumentar a fonte">
+                                                <img src="https://www.seduc.ce.gov.br/wp-content/themes/ceara2017/assets/images/font-plus-02.svg" alt="Aumentar a fonte" class="menu-accessibility__img" width="24" height="24">
+                                            </a>
+                                        </li>
+                                        <li class="menu-accessibility__item">
+                                            <a href="javascript:;" class="menu-accessibility__link menu-accessibility__link--contraste" title="Contraste da tela">
+                                                <img src="" alt="Contraste da tela" class="menu-accessibility__img" width="24" height="24">
+                                            </a>
+                                        </li>
+                                    </ul>
+                            </div>
+                        </div>
+                    
+                        <div class="container">
+                            <div class="row">
+                                <!-- Logotipo institucional do Governo do Estado do Ceará -->
+                                <div class="col p-0">
+                                    <div class="p-1">
+                                        <a href=""class="d-block w-100">
+                                                                                            <img class="w-100 mt-0 mb-0" src="https://www.seduc.ce.gov.br/wp-content/uploads/sites/37/2021/04/Secretaria-da-Educacao-INVERTIDA-WEB-branca.png" alt="Secretaria da Educacao-INVERTIDA-WEB-branca">
+                                                                                    </a>
+                                       
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" name="s" placeholder="Pesquisar..." aria-label="Pesquisar..." aria-describedby="button-search" value="">
+                                                <button class="btn btn-outline-secondary" type="submit" id="button-search">
+                                                   
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                                                    </div>
+                    </div>
+                </header>
+            </div>
+        </div>
+
+
+<section>
+<div class="wrapper container">
+
+
+    <div class="">
+                    <h2 class="titulo  ">Escola Monsenhor Aguiar Tianguá-CE</h2>
+                <p>&nbsp;</p>
+<p>A escola Monsenhor Aguiar é uma instituição de ensino localizado na cidade de Tianguá-CE que oferece educação para alunos do Ensino Médio. Fundado em 1975, a escola tem como objetivo proporcionar uma formação integral aos seus estudantes, com base em valores com ética, responsabilidade, soliedariedade e respeito a diversidades. com uma equipe de professores qualificados e uma estrutura moderna,  a Escola Monsenhor Aguiar se destaca pela qualidade de ensino e pelo compromisso em formar cidadãos críticos e consciente de seu papel na sociedade. </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Definição das Escolas</strong></p>
+<p>&nbsp;</p>
+<p>A escola é referência no município de Tianguá, tendo como modelo o tempo integral. tendo diversidades de ensino e qualidade de estudos, como uma sala de informática atendendo a necessidade dos alunos, sem contar a diversidade de eletivas e propostas de ensino. </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>– A escola Monsenhor Aguiar foi referência no ano de 2022 no Enem (exame nacional do ensino médio) com alunos com ótimos desempenhos.</p>
+<p>&nbsp;</p>
+<p><strong>Professores</strong></p>
+<p>&nbsp;</p>
+<p>–Nossa escola dispõe diversos professores qualificados para matérias específicas como: NTPPS e Cidadania que tem o intuíto de fazer com que os alunos sejam protagonistas. </p>
+<p>&nbsp;</p>
+<p><strong>Eletivas</strong></p>
+<p>&nbsp;</p>
+<p>
+	Eletivas disciplinas de livre escolha dos alunos, repeitando-se suas reais necessidades e interesses. São intens que podem compr os itinerários formativos. Elas são obrigatórias, e suas ofertas podem variar de acordo com a decisão da institução escolar. Pode até haver ofertas de disciplinas eletivas para determinados itinerários, caso haja uma necessidade do próprio.  
+</p>
+
+<p>&nbsp;</p>
+<p><strong>Clubes escolares</strong></p>
+<p>&nbsp;</p>
+<p>A Secretaria da Educação do Estado do Ceará, por meio da
+	Coordenadoria de Educação em Tempo Integral e Educação Complementar
+	(COETI), apresenta às Escolas de Ensino Médio em Tempo Integral -
+	EEMTI a coleção de fascículos que abordam Unidades Curriculares
+	Eletivas, que compõem os Itinerários Formativos do currículo, sendo
+	este material direcionado para os Clubes Estudantis.
+	Os fascículos são uma parte das ferramentas de suporte pedagógico
+	para a efetivação e funcionamento dos Clubes Estudantis, bem como
+	outras Unidades Curriculares Eletivas. A disponibilização deste material
+	para as EEMTI tem como objetivos:
+	</p>
+	<p>I. Contribuir com a formação ampla e integral da/do estudante, com
+		o intuito de que sejam protagonistas cooperativos(as) e solidários(as)</p>
+		<p>II. Oferecer apoio pedagógico e didático às/aos gestores(as), para
+			fortalecer o funcionamento dos Clubes Estudantis nas unidades escolares,
+			expondo experiências exitosas e fomentando novas possibilidades;</p>
+			<p>III. Disponibilizar, para as/os estudantes, subsídios para o
+				desenvolvimento e mobilização de habilidades inerentes ao protagonismo,
+				competência indispensável para o desenvolvimento dos Clubes Estudantis
+				na escola e na comunidade;</p>
+				<p>IV. Possibilitar a articulação dos Clubes Estudantis, sempre que
+					possível, com o Projeto de Vida, a fim de contribuir com a aquisição de
+					novos conhecimentos, a ampliação da aprendizagem e o crescimento
+					cognitivo e socioemocional das/dos estudantes.</p>
+<p><strong>
+	A escola disponibiliza de avaliações bimestrais tanto de professores, dinâmicas nas aulas, estruturas 
+</strong></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+  
+  
+<img src="funcionarios.jpg">
+											<p><strong>Agradecimentos a gestão escolar</strong></p>
+
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+<table style="height: 204px" width="534">
+<tbody>
+<tr>
+
+
+    </div>
+</section>
+
+
+&#xFEFF;</main>
+
+
+<section class="AcessoRapido">
+    <div class="wrapper">
+        <div class="row">
+
+            <h4>Mais sobre</h4>
+
+            <nav class="MenuAcessos">
+                <div class="acesso-rapido">
+                    <ul id="menu-acesso-rapido-footer" class="menu">
+                        <li id="menu-item-870" class="portal menu-item menu-item-type-custom menu-item-object-custom menu-item-870"><a href="https://www.instagram.com/p/CtepYArONaU/" target="_blank"><i class="PortalTransparencia"></i><br> instagram</a></li>
+                        <li id="menu-item-871" class="acesso menu-item menu-item-type-custom menu-item-object-custom menu-item-871"><a href="https://escolamonsaguiar.blogspot.com/2017/04/gremio-estudantil-da-escola-monsenhor.html" target="_blank"><i class="AcessoCidadao"></i><br>Grêmio estudantil</a></li>
+                        
+                    </ul>
+                </div>                    
+            </nav>
+
+        </div>
+    </div>
+</section>
+
+
+<footer>
+    <div class="wrapper"> 
+                        <div class="row Infos" style="border-top:none;">
+
+                    <div class="dt-2 NomeSite">
+                        <a class="link-gov" href="">
+                            
+                        </a>
+                    </div>
+
+                    <div class="dt-10 Direitos">
+                        <div>
+                            <div class="textwidget">
+                                                                    <div class="box"><h2></h2>
+<p>
+  R. Teófilo Ramos, 553-Centro <br>
+  Tianguá  Ceará - Brasil  |  CEP:62320-000<br>
+  
+</p></div>
+                                   
+
+                                
+                                <div class="box">
+                                    <h2 class="canais">Nossos canais</h2>
+                                    <div class="redes">
+                                        <ul class="menu">
+                                                                                            <li class="facebook redesLinkRodape">
+                                                    <a href="https://www.facebook.com/EscolaDeEnsinoMedioMonsenhorAguiar/?locale=pt_BR" style="overflow: hidden;" target="_blank">Facebook</a>
+                                                </li>
+                                                                                                                                        <li class="instagram redesLinkRodape">
+                                                    <a href="https://www.instagram.com/monsenhoraguiar/" style="overflow: hidden;" target="_blank">Instagram</a>
+                                                </li>
+                                                                                                                                        
+                                                                                                                                        <li class="youtube redesLinkRodape">
+                                                    <a href="https://youtube.com/@Derbsonfrota" style="overflow: hidden;" target="_blank">Youtube</a>
+                                                </li>
+                                                                                    </ul>
+                                    </div>
+                                </div>
+                            
+                                <div class="box copyright">
+                                    <p>
+                                        © 2023  – Escola Monsenhor Aguiar<br>
+                                        <p>&nbsp;</p>
+
+
+<p><strong>Diretora : Flávia Azevedo</strong></p> 
+
+		<p><strong>Feito por : Mateus 3°A
+	</strong></p>
+	<p><strong>organização : Alunos do C-Jovem </strong></p>
+	<p><strong>professor orientador : Derbson Frotta, evandro e Viana.
+</strong></p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+</footer>
+
+<div class="Overlay"></div>
+</div>
+
+
+<style id="core-block-supports-inline-css" type="text/css">
+/**
+ * Core styles: block-supports
+ */
+</style>
+
+
+
+</body></html>
